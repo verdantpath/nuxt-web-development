@@ -19,13 +19,18 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'foundation-sites/dist/css/foundation.min.css',
-    'assets/scss/main.scss'
+    'foundation-icon-fonts/foundation-icons.css',
+    'assets/scss/main.scss',
+    'assets/less/main.less',
+    'jquery-ui-bundle/jquery-ui.min.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/client-only/foundation.client.js',
-    '~plugins/utils.js',
+    '~/plugins/client-only/motion-ui.client.js',
+    '~/plugins/utils.js',
+    '~/plugins/client-only/jquery-ui-bundle.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
