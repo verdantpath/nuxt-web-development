@@ -6,3 +6,7 @@
   @include mui-animation(fade);
   animation-duration: 2s;
 }
+.home {
+  background-color: #ddd;
+  @include mui-animation(fade);
+}

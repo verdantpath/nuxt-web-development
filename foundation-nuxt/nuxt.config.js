@@ -22,6 +22,7 @@ export default {
     'foundation-icon-fonts/foundation-icons.css',
     'assets/scss/main.scss',
     'assets/less/main.less',
+    'assets/css/transitions.css',
     'jquery-ui-bundle/jquery-ui.min.css',
   ],
 
@@ -31,6 +32,8 @@ export default {
     '~/plugins/client-only/motion-ui.client.js',
     '~/plugins/utils.js',
     '~/plugins/client-only/jquery-ui-bundle.client.js',
+    '~/plugins/client-only/aos.client.js',
+    '~/plugins/client-only/swiper.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -42,9 +45,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  pageTransition: {
+    name: 'bounce',
+    mode: 'out-in'
   }
 }
