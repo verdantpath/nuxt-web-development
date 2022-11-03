@@ -52,7 +52,7 @@ export default {
   build: {
   },
   pageTransition: {
-    name: 'bounce',
+    name: 'fade',
     mode: 'out-in'
   }
 }
