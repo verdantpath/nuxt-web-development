@@ -1,5 +1,8 @@
 <template>
   <div class="welcome">
+    <Nav
+    v-for="item in nav"
+    </Nav>
     <ul class="menu align-center">
       <li><nuxt-link to="/">Home</nuxt-link></li>
       <li><nuxt-link to="/about">About</nuxt-link></li>
@@ -13,9 +16,17 @@
 </template>
 
 <script>
+import Nav from '~/components/nav.vue'
+import Social from '~/components/social.vue'
+
+
 export default {
   mounted () {
     this.$getCurrentScreenSize()
-  }
+  },
+  components: {
+    Nav,
+    Social
+}
 }
 </script>

@@ -34,6 +34,7 @@ export default {
     '~/plugins/client-only/jquery-ui-bundle.client.js',
     '~/plugins/client-only/aos.client.js',
     '~/plugins/client-only/swiper.client.js',
+    '~/plugins/global-components.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
